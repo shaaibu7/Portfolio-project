@@ -1,0 +1,95 @@
+/* stylelint-disable -- giving errors in font style */
+body{
+  background-color: #FFFFFF;;
+  margin-bottom: 60px;
+}
+
+section {
+  background-image: url("images/Header-bg.png");
+  background-repeat: no-repeat;
+  position: absolute;
+	border-bottom-left-radius: 50px;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #091e42;
+  margin-left: 40px;
+  letter-spacing: 0.37px;
+
+}
+
+nav > img{
+  float: right;
+  display: inline;
+  margin-top: -25px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 20px;
+  margin-left: 0px;
+}
+
+.header{
+  padding-left: 0px;
+}
+
+h3 {
+  margin-left: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+h1 {
+  font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #6070FF;
+  line-height: 20px;
+  margin-left: 40px;
+  display: inline;
+}
+
+p {
+  font: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 40px;
+  color: #344563;
+}
+
+a:hover {
+  color: grey;
+}
+
+a:enabled {
+  color: red;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.head{
+  margin-top: 30px;
+}

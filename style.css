@@ -5,7 +5,7 @@ body {
 }
 
 #wrapper {
-  width: 375px;
+  width: 385px;
   background-image: url('images/Header-bg.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -13,6 +13,7 @@ body {
   background-position-x: -10px;
   margin-left: 24px;
   margin-right: 24px;
+  background-color: #E5E5E5;;
 }
 
 #container {
@@ -26,6 +27,7 @@ body {
 
 #navbar {
   margin-top: 13px;
+  margin-left: -30px;
 }
 
 .logo {
@@ -91,4 +93,130 @@ li {
 
 #section {
   margin-right: 24px;
+}
+
+.middle{
+  margin-top: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 24px;
+}
+
+.item{
+  padding-right: 8px;
+  margin-top: 18px;
+}
+
+.item2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091E42;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  column-gap: 3px;
+  margin-left: -38px;
+  margin-top: -25px;
+}
+
+.item3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 10px;
+  color: #344563;
+}
+
+.item5 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 10px;
+  color: #6B778C;
+}
+
+.item7 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 10px;
+  color: #6B778C;
+}
+
+.item8 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-left: -40px;
+}
+
+li > button{
+  padding: 4px 12px;
+  color: #6070FF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background: #EBEBFF;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn{
+  margin-left: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396DF2;
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+button{
+  color: #396DF2;
+}
+
+button:hover{
+  background: #4053FC;
+  color: white;
+}
+
+button:disabled{
+  border: 1px solid black;
+}
+
+.contentone {
+  margin-top: 90px;
 }

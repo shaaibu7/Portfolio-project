@@ -115,7 +115,7 @@ li {
 }
 
 .item2 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -132,7 +132,7 @@ li {
 }
 
 .item3 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -141,7 +141,7 @@ li {
 }
 
 .item5 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -150,7 +150,7 @@ li {
 }
 
 .item7 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -159,7 +159,7 @@ li {
 }
 
 .item8 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -174,10 +174,10 @@ li {
   margin-left: -40px;
 }
 
-li > button {
+button {
   padding: 4px 12px;
   color: #6070ff;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -192,7 +192,7 @@ li > button {
   margin-left: 1px;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -202,10 +202,6 @@ li > button {
   border-radius: 8px;
   padding: 10px;
   background-color: white;
-}
-
-button {
-  color: #396df2;
 }
 
 button:hover {
@@ -230,7 +226,7 @@ button:disabled {
 
 #complete {
   padding-top: 140px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -239,7 +235,7 @@ button:disabled {
 }
 
 .last {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -248,7 +244,7 @@ button:disabled {
 }
 
 #intouch {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -264,7 +260,7 @@ button:disabled {
 }
 
 .lang {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -279,26 +275,26 @@ button:disabled {
   justify-content: space-between;
 }
 
-.arrow-image{
+.arrow-image {
   margin-top: 20px;
   margin-right: 40px;
 }
 
-.stacked{
+.stacked {
   display: flex;
   margin-top: 20px;
   margin-left: 10px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   margin-right: 20px;
   padding: 8px;
   width: 90%;
 }
 
-.listing{
+.listing {
   padding-top: 2px;
   padding-left: 5px;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -307,7 +303,7 @@ button:disabled {
   color: #253858;
 }
 
-.others{
+.others {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -315,13 +311,13 @@ button:disabled {
   margin-left: -28px;
 }
 
-.icon{
+.icon {
   margin-right: 50px;
   margin-top: 5px;
 }
 
 .text {
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;

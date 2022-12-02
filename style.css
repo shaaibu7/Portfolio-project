@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100&display=swap');
+body{
+  margin: 0;
+}
 
 #wrapper {
   width: 375px;
@@ -82,5 +85,9 @@ li {
   flex-direction: row;
   column-gap: 15px;
   margin-left: -17px;
+  margin-right: 24px;
+}
+
+#section {
   margin-right: 24px;
 }

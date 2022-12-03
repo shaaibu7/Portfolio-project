@@ -23,6 +23,7 @@ body {
   align-content: space-between;
   margin-left: 24px;
   margin-right: 24px;
+  background-color: white;
 }
 
 #navbar {
@@ -40,14 +41,13 @@ body {
 }
 
 #name {
-  padding-top: 40px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
   color: #091e42;
-  margin-top: 150px;
+  padding-top: 190px;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -96,12 +96,13 @@ li {
 }
 
 .middle {
+  display: grid;
   margin-top: 100px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-content: space-evenly;
   margin-left: 24px;
   background-color: white;
   padding: 15px;
@@ -124,20 +125,22 @@ li {
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  column-gap: 3px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 7px;
   margin-left: -38px;
   margin-top: -25px;
 }
 
 .item3 {
+  grid-column: 1/1;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 10px;
   color: #344563;
+  padding: 0;
 }
 
 .item5 {
@@ -147,6 +150,7 @@ li {
   font-size: 15px;
   line-height: 10px;
   color: #6b778c;
+  padding: 0;
 }
 
 .item7 {
@@ -156,6 +160,7 @@ li {
   font-size: 15px;
   line-height: 10px;
   color: #6b778c;
+  padding: 0;
 }
 
 .item8 {
@@ -168,8 +173,8 @@ li {
 }
 
 .skills {
-  display: flex;
-  flex-direction: row;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
   column-gap: 10px;
   margin-left: -40px;
 }
@@ -327,4 +332,15 @@ button:disabled {
 
 #ending {
   padding-bottom: 40px;
+}
+
+#grind {
+  background-color: white;
+  border-bottom-left-radius: 50px;
+  padding-bottom: 15px;
+  background-image: url("images/Header-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: 80px;
+  background-size: contain;
 }

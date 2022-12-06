@@ -344,3 +344,26 @@ button:disabled {
   background-position-y: 80px;
   background-size: contain;
 }
+
+#form-section {
+  background-image: url("images/Header-bg.png");
+  background-color: #6070FF;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 80px;
+  overflow: hidden;
+}
+
+#form-area {
+  background-color: white;
+}
+
+.form-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}

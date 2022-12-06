@@ -210,15 +210,20 @@ button {
   border-radius: 8px;
   padding: 10px;
   background-color: white;
+  cursor: pointer;
 }
 
 button:hover {
-  background: #4053fc;
+  background: #6070ff;
   color: white;
 }
 
 button:disabled {
-  border: 1px solid black;
+  color: #b3bac5;
+}
+
+button:active {
+  background-color: blue;
 }
 
 .contentone {
@@ -431,12 +436,5 @@ textarea {
   width: 50%;
   display: flex;
   justify-content: left;
-}
-
-.form-btn:hover {
-  background-color: gray;
-}
-
-.form-btn:enabled {
-  box-shadow: #344563;
+  cursor: pointer;
 }

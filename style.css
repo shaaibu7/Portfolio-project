@@ -446,20 +446,21 @@ textarea {
 
 /* Styling for desktop version of project */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   body {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: 0px;
-  }
-  #wrapper{
-    width: 100%;
-    background-size: contain;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
   }
 
-  #navbar{
+  #wrapper {
+    width: 100%;
+    background-size: contain;
+    margin: 0;
+  }
+
+  #navbar {
     display: none;
   }
 
@@ -471,7 +472,7 @@ textarea {
     display: flex;
     column-gap: 950px;
     width: 100%;
-    margin: 0px;
+    margin: 0;
   }
 
   .navigation {
@@ -479,7 +480,7 @@ textarea {
     flex-direction: row;
     justify-content: right;
     column-gap: 30px;
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -488,7 +489,7 @@ textarea {
   }
 
   .logo {
-   margin-left: 55px;
+    margin-left: 55px;
   }
 
   #name {
@@ -530,7 +531,7 @@ textarea {
     margin-left: -38px;
     margin-top: -25px;
   }
-  
+
   .cardcontent {
     margin-left: 24px;
   }
@@ -550,7 +551,7 @@ textarea {
   .abouttwo {
     padding-left: 500px;
     margin-top: -420px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .aboutone {
@@ -559,7 +560,6 @@ textarea {
 
   .arrow {
     width: 80%;
-    
   }
 
   .last {
@@ -571,11 +571,11 @@ textarea {
     flex-direction: column;
     width: 122px;
     height: 120px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .listing {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .stack_list {
@@ -584,7 +584,7 @@ textarea {
 
   #framework_section {
     width: 80%;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   #form-wrap {
@@ -604,7 +604,7 @@ textarea {
   form {
     width: 100%;
   }
-  
+
   .form-btn {
     padding: 12px 16px;
     color: #6070ff;
@@ -623,6 +623,4 @@ textarea {
     margin-left: 28%;
     cursor: pointer;
   }
-  
-
 }

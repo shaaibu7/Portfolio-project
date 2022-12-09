@@ -361,6 +361,8 @@ button:active {
   background-image: url("images/Header-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position-y: calc(50px);
+  background-position-x: -100px;
   background-color: #6070ff;
   color: #fff;
   display: flex;
@@ -507,12 +509,25 @@ textarea {
 
   .content {
     display: flex;
-    padding-left: -50px;
+    padding-bottom: 0px;
     justify-content: left;
-    height: 496px;
+    height: 448px;
     margin-left: 142px;
     margin-right: 142px;
     column-gap: 46px;
+    padding: 24px 0px 24px 24px;
+  }
+
+  .item1 {
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .item8 {
+    width: 496px;
+    height: 50px;
   }
 
   div.content > img {
@@ -522,6 +537,7 @@ textarea {
 
   .reverse {
     flex-direction: row-reverse;
+    padding-right: 24px;
   }
 
   .row {
@@ -623,4 +639,24 @@ textarea {
     margin-left: 28%;
     cursor: pointer;
   }
+
+  form {
+    width: 447px;
+    border-radius: 2px;
+    padding-left: 50px;
+  }
+
+  input {
+    height: 48px;
+  }
+
+  #form-section {
+    background-image: url("images/Header-bg.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 80px;
+    background-size: contain;
+  }
+  
+
 }

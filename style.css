@@ -472,7 +472,9 @@ textarea {
 
   #container {
     display: flex;
-    column-gap: 950px;
+
+    /* column-gap: 950px; */
+    column-gap: 60%;
     width: 100%;
     margin: 0;
   }
@@ -495,7 +497,7 @@ textarea {
   }
 
   #name {
-    width: 700px;
+    width: 70%;
   }
 
   #section {
@@ -504,7 +506,7 @@ textarea {
   }
 
   #about {
-    width: 920px;
+    width: 90%;
   }
 
   .content {
@@ -522,11 +524,12 @@ textarea {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    width: 50%;
   }
 
   .item8 {
-    width: 496px;
-    height: 50px;
+    width: 90%;
+    height: 10%;
   }
 
   div.content > img {
@@ -549,6 +552,11 @@ textarea {
 
   .cardcontent {
     margin-left: 24px;
+  }
+
+  .enclose {
+    width: 100%;
+    padding-right: 0;
   }
 
   .final {

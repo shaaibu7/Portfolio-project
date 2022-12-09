@@ -509,20 +509,19 @@ textarea {
 
   .content {
     display: flex;
-    padding-bottom: 0px;
     justify-content: left;
     height: 448px;
     margin-left: 142px;
     margin-right: 142px;
     column-gap: 46px;
-    padding: 24px 0px 24px 24px;
+    padding: 24px 0 24px 24px;
   }
 
   .item1 {
-    padding-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .item8 {
@@ -618,7 +617,9 @@ textarea {
   }
 
   form {
-    width: 100%;
+    width: 447px;
+    border-radius: 2px;
+    padding-left: 50px;
   }
 
   .form-btn {
@@ -640,23 +641,7 @@ textarea {
     cursor: pointer;
   }
 
-  form {
-    width: 447px;
-    border-radius: 2px;
-    padding-left: 50px;
-  }
-
   input {
     height: 48px;
   }
-
-  #form-section {
-    background-image: url("images/Header-bg.png");
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: 80px;
-    background-size: contain;
-  }
-  
-
 }

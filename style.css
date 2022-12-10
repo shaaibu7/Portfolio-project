@@ -532,6 +532,18 @@ textarea {
 
   #name {
     width: 70%;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scale(2);
+    }
+
+    to {
+      transform: scale(1);
+    }
   }
 
   #section {

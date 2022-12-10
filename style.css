@@ -491,7 +491,7 @@ textarea {
     line-height: 20px;
     color: #344563;
   }
-
+  
   .logo {
     margin-left: 55px;
   }
@@ -525,6 +525,10 @@ textarea {
     margin-bottom: 0;
     padding-bottom: 0;
     width: 50%;
+  }
+
+  .item1:hover {
+    transform: scale(1.01);
   }
 
   .item8 {
@@ -595,6 +599,12 @@ textarea {
     width: 122px;
     height: 120px;
     margin-right: 0;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .stacked:hover {
+    transform: scale(0.9);
   }
 
   .listing {

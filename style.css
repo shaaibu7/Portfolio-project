@@ -492,12 +492,58 @@ textarea {
     color: #344563;
   }
 
+  .author p a {
+    transition-property: color font-size;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .navigation li a {
+    transition-property: color font-size;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .author p a:hover {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1.5rem;
+  }
+
+  .navigation li a:hover {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1rem;
+  }
+
+  .click button {
+    transition-property: color font-size;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .click:hover {
+    color: #344563;
+  }
+
   .logo {
     margin-left: 55px;
   }
 
   #name {
     width: 70%;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scale(2);
+    }
+
+    to {
+      transform: scale(1);
+    }
   }
 
   #section {
@@ -525,6 +571,10 @@ textarea {
     margin-bottom: 0;
     padding-bottom: 0;
     width: 50%;
+  }
+
+  .item1:hover {
+    transform: scale(1.01);
   }
 
   .item8 {
@@ -595,6 +645,12 @@ textarea {
     width: 122px;
     height: 120px;
     margin-right: 0;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .stacked:hover {
+    transform: scale(0.9);
   }
 
   .listing {

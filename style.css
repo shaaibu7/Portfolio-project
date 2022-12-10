@@ -491,7 +491,41 @@ textarea {
     line-height: 20px;
     color: #344563;
   }
-  
+
+  .author p a {
+    transition-property: color font-size;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .navigation li a {
+    transition-property: color font-size;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .author p a:hover {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1.5rem;
+  }
+
+  .navigation li a:hover {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1rem;
+  }
+
+  .click button {
+    transition-property: color font-size;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .click:hover {
+    color: #344563;
+  }
+
   .logo {
     margin-left: 55px;
   }

@@ -4,6 +4,7 @@
    - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -25,6 +26,10 @@ In order to run this project you need:
 Follow the link to setup the project correctly.
 
 - [Set up project](https://github.com/microverseinc/linters-config/tree/master/html-css)
+
+### Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://shaaibu7.github.io/)
 
 
 ### Setup

@@ -44,7 +44,9 @@ body {
   font-weight: 700px;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+
+  /* color: #6070ff; */
+  color: blue;
 }
 
 #name {
@@ -77,9 +79,21 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+
+  /* color: #7f8cff; */
+  color: blue;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.connect:hover {
+  cursor: pointer;
+  color: #7f8cff;
+}
+
+.connect:focus {
+  cursor: pointer;
+  color: #7f8cff;
 }
 
 a {
@@ -188,7 +202,9 @@ li {
 
 button {
   padding: 4px 12px;
-  color: #6070ff;
+
+  /* color: #6070FF; */
+  color: blue;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -266,7 +282,9 @@ button:active {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+
+  /* color: #7f8cff; */
+  color: blue;
 }
 
 .social {
@@ -425,12 +443,16 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #b3bac5;
+
+  /* color: #b3bac5; */
+  color: black;
 }
 
 .form-btn {
   padding: 12px 16px;
-  color: #6070ff;
+
+  /* color: #6070ff; */
+  color: blue;
   letter-spacing: 0.03em;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -497,6 +519,9 @@ textarea {
   }
 
   .author p a {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1.5rem;
     transition-property: color font-size;
     transition-duration: 400ms;
     transition-timing-function: ease-in-out;
@@ -509,6 +534,12 @@ textarea {
   }
 
   .author p a:hover {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1.5rem;
+  }
+
+  .author p a:focus {
     cursor: pointer;
     color: #396df2;
     font-size: 1.5rem;
@@ -692,7 +723,9 @@ textarea {
 
   .form-btn {
     padding: 12px 16px;
-    color: #6070ff;
+
+    /* color: #6070ff; */
+    color: blue;
     letter-spacing: 0.03em;
     text-align: center;
     font-family: "Poppins", sans-serif;

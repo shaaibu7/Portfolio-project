@@ -208,14 +208,14 @@ button {
   padding: 4px 12px;
 
   /* color: #6070FF; */
-  color: #0000FF;
+  color: #00f;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  background: #F2F2F5;
+  background: #f2f2f5;
   border-radius: 8px;
   border: none;
 }
@@ -241,7 +241,7 @@ button {
 
 .stack > button {
   background: white;
-  color: #0000FF;
+  color: #00f;
   border: 1px solid blue;
 }
 

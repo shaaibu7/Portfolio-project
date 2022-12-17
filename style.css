@@ -7,6 +7,10 @@ body {
   width: 100%;
 }
 
+.d-none {
+  display: none;
+}
+
 #wrapper {
   width: 385px;
   background-image: url("images/Header-bg.png");
@@ -40,7 +44,9 @@ body {
   font-weight: 700px;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+
+  /* color: #6070ff; */
+  color: blue;
 }
 
 #name {
@@ -73,9 +79,25 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+
+  /* color: #7f8cff; */
+  color: blue;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.connect:hover {
+  cursor: pointer;
+
+  /* color: #7f8cff; */
+  color: blue;
+}
+
+.connect:focus {
+  cursor: pointer;
+
+  /* color: #7f8cff; */
+  color: blue;
 }
 
 a {
@@ -184,14 +206,16 @@ li {
 
 button {
   padding: 4px 12px;
-  color: #6070ff;
+
+  /* color: #6070FF; */
+  color: #00f;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  background: #ebebff;
+  background: #f2f2f5;
   border-radius: 8px;
   border: none;
 }
@@ -205,7 +229,9 @@ button {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
+
+  /* color: #396df2; */
+  color: blue;
   border: 1px solid blue;
   border-radius: 8px;
   padding: 10px;
@@ -213,8 +239,15 @@ button {
   cursor: pointer;
 }
 
+.stack > button {
+  background: white;
+  color: #00f;
+  border: 1px solid blue;
+}
+
 button:hover {
-  background: #6070ff;
+  /* background: #6070ff; */
+  background: blue;
   color: white;
 }
 
@@ -262,7 +295,9 @@ button:active {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+
+  /* color: #7f8cff; */
+  color: blue;
 }
 
 .social {
@@ -421,12 +456,16 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #b3bac5;
+
+  /* color: #b3bac5; */
+  color: black;
 }
 
 .form-btn {
   padding: 12px 16px;
-  color: #6070ff;
+
+  /* color: #6070ff; */
+  color: blue;
   letter-spacing: 0.03em;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -434,12 +473,17 @@ textarea {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  background: #fff;
+  background: white;
   border-radius: 8px;
   width: 50%;
   display: flex;
   justify-content: left;
   cursor: pointer;
+}
+
+.form-btn:hover {
+  background: black;
+  color: white;
 }
 
 #navtag {
@@ -493,6 +537,9 @@ textarea {
   }
 
   .author p a {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1.5rem;
     transition-property: color font-size;
     transition-duration: 400ms;
     transition-timing-function: ease-in-out;
@@ -505,6 +552,12 @@ textarea {
   }
 
   .author p a:hover {
+    cursor: pointer;
+    color: #396df2;
+    font-size: 1.5rem;
+  }
+
+  .author p a:focus {
     cursor: pointer;
     color: #396df2;
     font-size: 1.5rem;
@@ -688,7 +741,9 @@ textarea {
 
   .form-btn {
     padding: 12px 16px;
-    color: #6070ff;
+
+    /* color: #6070ff; */
+    color: blue;
     letter-spacing: 0.03em;
     text-align: center;
     font-family: "Poppins", sans-serif;

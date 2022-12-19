@@ -33,70 +33,81 @@ body {
   background-color: white;
 }
 
-.nav-sub {
-  position: absolute;
-  top: 10vh;
-  right: 0;
-  width: 450px;
-  height: 40%;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(231, 228, 228);
-  border-radius: 0 0 0 20px;
-  transition: transform 0.3s ease-in;
-  transform: translate(100%);
+#navbar {
+  margin-top: 13px;
 }
 
-.nav-sub li {
-  color: #091e42;
-  gap: 1px;
-}
+/* styling for mobile menu transition */
 
-.nav-change {
-  transform: translate(0%);
-}
-
-.hamburgur {
-  display: block;
-}
-
-.change .bar1 {
-  transform: rotate(45deg) translate(8px, 3px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  transform: rotate(-45deg) translate(8px, -3px);
-}
-
-.nav-sub {
+.nav-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 
-.list-item {
-  padding: 10px;
-  list-style: none;
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
 
 .nav-link {
-  color: inherit;
-  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin: 4px;
-  background: #6070ff;
-  display: flex;
-  -webkit-transition: all 0.3s ease-in-out;
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -150%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    transition: 0.2s;
+  }
+
+  .nav-item {
+    margin: 18px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 .logo {

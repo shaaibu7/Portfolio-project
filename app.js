@@ -1,6 +1,8 @@
 const hamburger = document.querySelector('.hamburger');
 const navmenu = document.querySelector('.nav-menu');
 const mainContainer = document.querySelector('.enclose');
+// const popupWindow = document.querySelector('.window-popup');
+// const parentContainer = document.querySelector('.parent-container');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -95,8 +97,110 @@ cardContent.forEach((item) => {
             </ul>
         </div>
         <div class="click">
-            <button class="btn" type="button">${item.button}</button>
+            <button btn-id="${item.id}" class="btn showBtn" type="button">${item.button}</button>
         </div>
     </div>
 </div>`;
+});
+
+const windowPopup = [
+  {
+    id: 'cardOne',
+    title: 'Tonic',
+    fields: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/Snapshoot-Portfolio.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: '#',
+      source: '#',
+    },
+  },
+
+  {
+    id: 'cardTwo',
+    title: 'Multi-Post Stories',
+    fields: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/Snapshoot-Portfolio1.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: '#',
+      source: '#',
+    },
+  },
+
+  {
+    id: 'cardThree',
+    title: 'Multi-Post Stories',
+    fields: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/Snapshoot-Portfolio2.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: '#',
+      source: '#',
+    },
+  },
+
+  {
+    id: 'cardFour',
+    title: 'Multi-Post Stories',
+    fields: ['Canopy', 'Back End Dev', '2015'],
+    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/Snapshoot-Portfolio3.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: '#',
+      source: '#',
+    },
+  },
+];
+
+// Implement logic for pop up window on click
+
+// const btn = document.querySelector('.showBtn');
+const sectionContent = document.querySelector('.window-popup');
+
+const parent = document.querySelector('.parent-container');
+parent.addEventListener('click', (e) => {
+  const value = e.target.getAttribute('btn-id');
+
+  windowPopup.forEach((item) => {
+    if (value === item.id) {
+      sectionContent.innerHTML += `<div class="pop-contain"><img src="${item.images.contentImage}" width="170px" height="150px"></div>`;
+    }
+  });
 });

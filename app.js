@@ -108,7 +108,7 @@ const windowPopup = [
     id: 'cardOne',
     title: 'Tonic',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -116,6 +116,7 @@ const windowPopup = [
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
     },
     btn1: 'See live',
     btn2: 'See source',
@@ -129,7 +130,7 @@ const windowPopup = [
     id: 'cardTwo',
     title: 'Multi-Post Stories',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -137,6 +138,7 @@ const windowPopup = [
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
     },
     btn1: 'See live',
     btn2: 'See source',
@@ -150,7 +152,7 @@ const windowPopup = [
     id: 'cardThree',
     title: 'Multi-Post Stories',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -158,6 +160,7 @@ const windowPopup = [
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
     },
     btn1: 'See live',
     btn2: 'See source',
@@ -171,7 +174,7 @@ const windowPopup = [
     id: 'cardFour',
     title: 'Multi-Post Stories',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -179,6 +182,7 @@ const windowPopup = [
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
     },
     btn1: 'See live',
     btn2: 'See source',
@@ -194,13 +198,74 @@ const windowPopup = [
 // const btn = document.querySelector('.showBtn');
 const sectionContent = document.querySelector('.window-popup');
 
+// Cancel on click logic
+function cancelLogic() {
+  const cancelBtn = document.querySelector('.cancelImage');
+  cancelBtn.addEventListener('click', () => {
+    sectionContent.innerHTML = '';
+  });
+}
+
 const parent = document.querySelector('.parent-container');
 parent.addEventListener('click', (e) => {
   const value = e.target.getAttribute('btn-id');
 
   windowPopup.forEach((item) => {
     if (value === item.id) {
-      sectionContent.innerHTML += `<div class="pop-contain"><img src="${item.images.contentImage}" width="170px" height="150px"></div>`;
+      sectionContent.innerHTML += `<div class="pop-contain">
+      <div class="mainPopup">
+      <div class="headContainerPopup">
+        <div class="contentPopup">
+          <div class="headerPopup">
+              <h2 class="h2Popup">${item.title}</h2>  
+              <ul class="rowPopup">
+                  <li class="itemPopup">${item.fields[0]}</li>
+                  <li><img src="${item.images.counter}" alt="a dot image"></li>
+                  <li class="itemPopup">${item.fields[1]}</li>
+                  <li><img src="${item.images.counter}" alt="second dot image"></li>
+                  <li class="itemPopup">${item.fields[2]}</li>
+              </ul>
+          </div>
+          
+          <div class="imagePopup">
+              <img src="${item.images.cancelImage}" alt="" width="20px" class="cancelImage">
+          </div>
+        </div>
+      </div>
+
+      <div class="cardImage">
+          <img src="${item.images.contentImage}" alt="" width="94%" height="300px">
+      </div>
+
+      <div class="sectionTwoPopup">
+          <div class="description">
+              <p class="popupDescribe item8">${item.description}</p>
+          </div>
+
+          <div class="tech">
+              <ul class="skillsPopup">
+                  <li><button>${item.stack[0]}</button></li>
+                  <li><button>${item.stack[1]}</button></li>
+                  <li><button>${item.stack[2]}</button></li>
+              </ul>
+
+              <ul class="skillsPopup skillsCancel">
+                  <li><button>${item.stackTwo[0]}</button></li>
+                  <li><button>${item.stackTwo[1]}</button></li>
+                  <li><button>${item.stackTwo[2]}</button></li>
+              </ul>
+
+              <button class="btnPopup btnPopup1"><span>${item.btn1}</span> <img src="images/see-live.png" alt="" class="redirect"></button>
+              <button class="btnPopup1"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button>
+          </div>
+      </div>
+
+  </div>
+
+      </div>
+       
+`;
     }
   });
+  cancelLogic();
 });

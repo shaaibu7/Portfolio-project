@@ -585,6 +585,122 @@ textarea {
   justify-content: center;
 }
 
+/* styling for popup window */
+
+.mainPopup {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  height: 700px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.rowPopup {
+  display: flex;
+  column-gap: 10px;
+  margin-top: -15px;
+  margin-left: -30px;
+}
+
+.h2Popup {
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.headContainerPopup {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentPopup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagePopup {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+}
+
+.headerPopup {
+  padding-left: 20px;
+}
+
+.sectionTwoPopup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skillsPopup {
+  display: flex;
+  column-gap: 10px;
+  padding-right: 90px;
+}
+
+.popupDescribe {
+  padding-left: 25px;
+}
+
+.btnPopup {
+  margin-left: 40px;
+  padding: 4px 40px;
+}
+
+.btnPopup1 {
+  border: 1px solid blue;
+}
+
+.itemPopup {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 10px;
+  color: #344563;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .sectionTwoPopup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skillsCancel {
+    display: none;
+  }
+
+  .tech {
+    margin-left: -35px;
+  }
+
+  .popupDescribe {
+    padding-left: 10px;
+  }
+
+  .headerPopup {
+    padding-left: 5px;
+  }
+
+  .skillsPopup {
+    margin-bottom: 30px;
+  }
+}
+
 /* Styling for desktop version of project */
 
 @media screen and (min-width: 768px) {

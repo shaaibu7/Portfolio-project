@@ -26,8 +26,8 @@ const emailInputLowercase = emailInput.value.toLowerCase();
 
 document.getElementById('formSubmit').addEventListener('click', () => {
   if (emailInput === emailInputLowercase) {
-    errorMessage('form submitted');
+    errorMessage('form submitted successfully');
   } else {
-    errorMessage('please type email in lowercase');
+    errorMessage('Please enter your email in lower cases(abc)');
   }
 });

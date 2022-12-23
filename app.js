@@ -121,8 +121,8 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: '#',
-      source: '#',
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
   },
 
@@ -143,8 +143,8 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: '#',
-      source: '#',
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
   },
 
@@ -165,8 +165,8 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: '#',
-      source: '#',
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
   },
 
@@ -187,8 +187,8 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: '#',
-      source: '#',
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
   },
 ];
@@ -206,6 +206,17 @@ function cancelLogic() {
   });
 }
 
+function Seelivebtn() {
+  const cancelseeLIvebtn = document.querySelector('.btnPopup');
+  cancelseeLIvebtn.addEventListener('click', () => {
+    sectionContent.innerHTML = '';
+  });
+
+  const cancelseeLIvebtn1 = document.querySelector('.btnPops');
+  cancelseeLIvebtn1.addEventListener('click', () => {
+    sectionContent.innerHTML = '';
+  });
+}
 const parent = document.querySelector('.parent-container');
 parent.addEventListener('click', (e) => {
   const value = e.target.getAttribute('btn-id');
@@ -255,8 +266,8 @@ parent.addEventListener('click', (e) => {
                   <li><button>${item.stackTwo[2]}</button></li>
               </ul>
 
-              <button class="btnPopup btnPopup1"><span>${item.btn1}</span> <img src="images/see-live.png" alt="" class="redirect"></button>
-              <button class="btnPopup1"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button>
+              <a href="${item.navigation.live}" target="_blank"><button class="btnPopup btnPopup1"><span>${item.btn1}</span> <img src="images/see-live.png" alt="" class="redirect"></button></a>
+              <a href="${item.navigation.live}" target="_blank"><button class="btnPopup1 btnPops"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button></a>
           </div>
       </div>
 
@@ -268,4 +279,5 @@ parent.addEventListener('click', (e) => {
     }
   });
   cancelLogic();
+  Seelivebtn();
 });

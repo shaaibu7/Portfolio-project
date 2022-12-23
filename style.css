@@ -593,6 +593,7 @@ textarea {
   margin: 0 auto;
   height: 700px;
   margin-top: 50px;
+  border-radius: 10px;
 }
 
 ul {

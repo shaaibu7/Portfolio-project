@@ -20,16 +20,26 @@ navLinks.forEach((link) => {
 
 // serving main conetent dynamically
 
-const cardContent = [
+const windowPopup = [
   {
     id: 'cardOne',
     title: 'Tonic',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
       contentImage: 'images/Snapshoot-Portfolio.png',
       counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
     button: 'See Project',
   },
@@ -38,24 +48,45 @@ const cardContent = [
     id: 'cardTwo',
     title: 'Multi-Post Stories',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
       contentImage: 'images/Snapshoot-Portfolio1.png',
       counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
     button: 'See Project',
+    styling: 'reverse',
   },
 
   {
     id: 'cardThree',
     title: 'Multi-Post Stories',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
       contentImage: 'images/Snapshoot-Portfolio2.png',
       counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
     button: 'See Project',
   },
@@ -64,18 +95,33 @@ const cardContent = [
     id: 'cardFour',
     title: 'Multi-Post Stories',
     fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads. no accounts or sign-ups are required.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
     stack: ['html', 'css', 'javascript'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
       contentImage: 'images/Snapshoot-Portfolio3.png',
       counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://github.com/shaaibu7/Portfolio-project',
+      source: 'https://github.com/shaaibu7/Portfolio-project',
     },
     button: 'See Project',
+    styling: 'reverse',
   },
 ];
 
-cardContent.forEach((item) => {
-  mainContainer.innerHTML += `<div class="content">
+function Reverse() {
+
+}
+
+windowPopup.forEach((item) => {
+  mainContainer.innerHTML += `<div class="content ${item.styling}">
     <img class="item item1" src="${item.images.contentImage}" alt="first project image">
     <div class="card">
         <h2 class="item item2">${item.title}</h2>
@@ -101,97 +147,8 @@ cardContent.forEach((item) => {
         </div>
     </div>
 </div>`;
+  Reverse();
 });
-
-const windowPopup = [
-  {
-    id: 'cardOne',
-    title: 'Tonic',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
-    images: {
-      contentImage: 'images/Snapshoot-Portfolio.png',
-      counter: 'images/Counter.png',
-      liveImage: 'images/see-live.png',
-      sourceImage: 'images/see-source.png',
-      cancelImage: 'images/xicon.png',
-    },
-    btn1: 'See live',
-    btn2: 'See source',
-    navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
-    },
-  },
-
-  {
-    id: 'cardTwo',
-    title: 'Multi-Post Stories',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
-    images: {
-      contentImage: 'images/Snapshoot-Portfolio1.png',
-      counter: 'images/Counter.png',
-      liveImage: 'images/see-live.png',
-      sourceImage: 'images/see-source.png',
-      cancelImage: 'images/xicon.png',
-    },
-    btn1: 'See live',
-    btn2: 'See source',
-    navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
-    },
-  },
-
-  {
-    id: 'cardThree',
-    title: 'Multi-Post Stories',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
-    images: {
-      contentImage: 'images/Snapshoot-Portfolio2.png',
-      counter: 'images/Counter.png',
-      liveImage: 'images/see-live.png',
-      sourceImage: 'images/see-source.png',
-      cancelImage: 'images/xicon.png',
-    },
-    btn1: 'See live',
-    btn2: 'See source',
-    navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
-    },
-  },
-
-  {
-    id: 'cardFour',
-    title: 'Multi-Post Stories',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
-    images: {
-      contentImage: 'images/Snapshoot-Portfolio3.png',
-      counter: 'images/Counter.png',
-      liveImage: 'images/see-live.png',
-      sourceImage: 'images/see-source.png',
-      cancelImage: 'images/xicon.png',
-    },
-    btn1: 'See live',
-    btn2: 'See source',
-    navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
-    },
-  },
-];
 
 // Implement logic for pop up window on click
 

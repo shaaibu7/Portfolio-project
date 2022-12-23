@@ -281,3 +281,21 @@ parent.addEventListener('click', (e) => {
   clickClose();
   Seelivebtn();
 });
+
+function storeData() {
+  const form = document.getElementById('contact-form');
+  const myFormData = new FormData(form);
+  const formDataObj = Object.fromEntries(myFormData.entries());
+  localStorage.setItem('contactform', JSON.stringify(formDataObj));
+}
+
+email.addEventListener('keydown', storeData);
+name.addEventListener('keydown', storeData);
+text.addEventListener('keydown', storeData);
+
+const contactFormData = JSON.parse(
+  localStorage.getItem('contactform') ?? '{}',
+);
+name.value = contactFormData.name ?? '';
+email.value = contactFormData.email ?? '';
+text.value = contactFormData.message ?? '';

@@ -14,3 +14,20 @@ navLinks.forEach((link) => {
     navmenu.classList.remove('active');
   });
 });
+
+// contact form validation
+
+const errorMessage = (value) => {
+  document.getElementById('error').innerHTML += `<p>${value}</p>`;
+};
+
+const emailInput = document.getElementById('email');
+const emailInputLowercase = emailInput.value.toLowerCase();
+
+document.getElementById('formSubmit').addEventListener('click', () => {
+  if (emailInput === emailInputLowercase) {
+    errorMessage('form submitted');
+  } else {
+    errorMessage('please type email in lowercase');
+  }
+});

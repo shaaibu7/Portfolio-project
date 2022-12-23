@@ -199,7 +199,7 @@ const windowPopup = [
 const sectionContent = document.querySelector('.window-popup');
 
 // Cancel on click logic
-function cancelLogic() {
+function clickClose() {
   const cancelBtn = document.querySelector('.cancelImage');
   cancelBtn.addEventListener('click', () => {
     sectionContent.innerHTML = '';
@@ -278,6 +278,6 @@ parent.addEventListener('click', (e) => {
 `;
     }
   });
-  cancelLogic();
+  clickClose();
   Seelivebtn();
 });

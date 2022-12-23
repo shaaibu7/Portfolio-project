@@ -238,3 +238,31 @@ parent.addEventListener('click', (e) => {
   clickClose();
   Seelivebtn();
 });
+
+// form validation logic
+
+const email = document.querySelector('#email');
+const formSection = document.querySelector('#formsection');
+const errorSection = document.querySelector('#error');
+
+// function to check if email meets validation requirement
+
+function emailValidation(email) {
+  if (email.match(/^[a-z@.0-9-_]*$/)) {
+    return true;
+  }
+  return false;
+}
+
+formSection.addEventListener('submit', (e) => {
+  if (emailValidation(email.value)) {
+    errorSection.textContent = '';
+  } else {
+    e.preventDefault();
+    email.getElementsByClassName.border = '4px solid red';
+    errorSection.style.display = 'flex';
+    errorSection.style.backgroundColor = 'red';
+    errorSection.style.borderRadius = '8px';
+    errorSection.textContent = 'Please use lowercase characters for email input';
+  }
+});

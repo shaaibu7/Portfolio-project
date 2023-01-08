@@ -18,7 +18,7 @@ navLinks.forEach((link) => {
   });
 });
 
-// serving main conetent dynamically
+// serving main content dynamically
 
 const windowPopup = [
   {
@@ -202,7 +202,7 @@ parent.addEventListener('click', (e) => {
       </div>
 
       <div class="cardImage">
-          <img src="${item.images.contentImage}" alt="" width="94%" height="300px">
+          <img src="${item.images.contentImage}" alt="" class="img-resize" width="94%" height="200px">
       </div>
 
       <div class="sectionTwoPopup">

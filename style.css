@@ -12,14 +12,16 @@ body {
 }
 
 #wrapper {
-  width: 385px;
+  /* width: 385px; */
   background-image: url("images/Header-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: calc(50px);
   background-position-x: -10px;
-  margin-left: 24px;
-  margin-right: 24px;
+
+  /* margin-left: 24px; */
+
+  /* margin-right: 24px; */
   background-color: #e5e5e5;
 }
 
@@ -353,6 +355,7 @@ button:active {
   margin-top: 150px;
   width: 100%;
   border-top-right-radius: 80px;
+  padding-left: 20px;
 }
 
 #complete {
@@ -372,6 +375,7 @@ button:active {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  width: 90%;
 }
 
 #intouch {
@@ -979,5 +983,9 @@ ul {
 
   input {
     height: 48px;
+  }
+
+  .img-resize {
+    height: 300px;
   }
 }

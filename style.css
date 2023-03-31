@@ -49,12 +49,12 @@ body {
 
 .item1 {
   padding-right: 0;
+  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
   width: 90%;
   height: 15rem;
-  margin: 0 auto;
 }
 
 .hamburger {

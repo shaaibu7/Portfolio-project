@@ -224,7 +224,7 @@ parent.addEventListener('click', (e) => {
               </ul>
 
               <a href="${item.navigation.live}" target="_blank"><button class="btnPopup btnPopup1"><span>${item.btn1}</span> <img src="images/see-live.png" alt="" class="redirect"></button></a>
-              <a href="${item.navigation.live}" target="_blank"><button class="btnPopup1 btnPops"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button></a>
+              <a href="${item.navigation.source}" target="_blank"><button class="btnPopup1 btnPops"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button></a>
           </div>
       </div>
 

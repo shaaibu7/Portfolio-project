@@ -114,6 +114,30 @@ const windowPopup = [
     button: 'See Project',
     styling: 'reverse',
   },
+
+  {
+    id: 'cardFive',
+    title: 'Budget app',
+    fields: ['Plan', 'Spend', '2023'],
+    description: 'A Budget app that helps users monitor their spending and transactions by carefully keeping organized records.',
+    stack: ['html', 'css', 'Ruby on rails'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/budgetapp.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://budget-c1ft.onrender.com/',
+      source: 'https://github.com/shaaibu7/Budget-app',
+    },
+    button: 'See Project',
+    styling: 'reverse',
+  },
 ];
 
 function Reverse() {

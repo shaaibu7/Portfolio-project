@@ -852,7 +852,6 @@ ul {
     margin-bottom: 255px;
   }
 
-
   .btn {
     margin-bottom: 8rem;
   }
@@ -860,8 +859,6 @@ ul {
   #about {
     width: 70%;
   }
- 
-
 
   .content {
     display: flex;
@@ -1011,10 +1008,6 @@ ul {
     height: 48px;
   }
 
-  .img-resize {
-    height: 300px;
-  }
-
   .icon-text {
     display: flex;
     flex-direction: column;
@@ -1145,8 +1138,8 @@ ul {
   }
 
   .img-resize {
-     width: 90%;
-     height: 60%;
+    width: 90%;
+    height: 60%;
   }
 
   #name {
@@ -1175,10 +1168,7 @@ ul {
     padding-left: 1rem;
   }
 
-
   #about {
     width: 80%;
   }
-
-   
 }

@@ -5,6 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   <title>Suleiman | Full Stack Engineer</title>
 </head>
 <body class="parent-container">
@@ -85,7 +91,7 @@
                         </ul>
             
                         <div class="click">
-                            <button type="button" class="btn">Get My Resume</button>
+                            <a href="https://docs.google.com/document/d/1VBbulvS43jrRoJ4aG31n5MqMZcJvJtSnym_dgSm5ljI/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><button type="button" class="btn">Get My Resume</button></a>
                         </div>
                     </div>
 
@@ -95,8 +101,9 @@
                                 <li class="lang">Languages</li>
                             </ul>
                             <div class="arrow-image">
-                                <a href="#"><img src="images/Union.png" alt="an arrow image" id="arrowtag"></a>
+                                <span><i class="far fa-chevron-down" id="arrowone"></i></span>
                             </div>
+                            
                         </div>
                         <div class="stack_list">
                              <section class="icon-text">
@@ -143,7 +150,7 @@
                         <div id="framework_section">
                             <ul class="others">
                                 <li class="text">Frameworks</li>
-                                <li class="icon"><a href="#"><img src="images/Union2.png" alt="arrow image"></a></li>
+                                <li class="icon"><span><i class="far fa-chevron-down" id="arrowtwo"></i></span></li>
                             </ul>
 
                             <div class="framework-list stack_list">
@@ -158,7 +165,7 @@
                                 </section>
 
                                 <section class="icon-text">
-                                    <img src="images/postgresql.jpg" class="html-image" alt="html image" width="50rem">
+                                    <img src="images/react.svg" class="html-image" alt="html image" width="50rem">
                                     <span class="language-text">React.js</span>
                                 </section>
 
@@ -167,44 +174,47 @@
                             <div>
                                 <img src="images/Separator-Bottom.png" alt="line separator image" width="95%">
                             </div>
-                            <ul class="others">
-                                <li class="text">Soft Skills</li>
-                                <li class="icon"><a href="#"><img src="images/Union2.png" alt="an arrow image"></a></li>
-                            </ul>
+                            
+                            <div>
+                                <ul class="others">
+                                    <li class="text">Soft Skills</li>
+                                    <li class="icon"><span><i class="far fa-chevron-down" id="arrowthree"></i></span></li>
+                                </ul>
 
-                            <section class="soft-skills">
-                                <section class="soft-item">
-                                    <span>Collaboration</span>
-                                </section>
+                                <section class="soft-skills">
+                                    <section class="soft-item">
+                                        <span>Collaboration</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Teamwork</span>
-                                </section>
+                                    <section class="soft-item">
+                                        <span>Teamwork</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Leadership</span>
-                                </section>
+                                    <section class="soft-item">
+                                        <span>Leadership</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Problem solving</span>
-                                </section>
+                                    <section class="soft-item">
+                                        <span>Problem solving</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Creativity</span>
-                                </section>
+                                    <section class="soft-item">
+                                        <span>Creativity</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Integrity</span>
-                                </section>
+                                    <section class="soft-item">
+                                        <span>Integrity</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Critical Thinking</span>
-                                </section>
+                                    <section class="soft-item">
+                                        <span>Critical Thinking</span>
+                                    </section>
 
-                                <section class="soft-item">
-                                    <span>Communication</span>
+                                    <section class="soft-item">
+                                        <span>Communication</span>
+                                    </section>
                                 </section>
-                            </section>
+                            </div>
 
             
                             <div>
@@ -240,5 +250,6 @@
         </section>
     </div>
     <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -16,8 +16,8 @@ body {
   background-image: url("images/Header-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: calc(50px);
-  background-position-x: -10px;
+  /* background-position-y: calc(40px); */
+  /* background-position-x: -10px; */
 
   /* margin-left: 24px; */
 
@@ -35,7 +35,24 @@ body {
   background-color: white;
 }
 
- #navbar {
+.hidden {
+  display: none;
+}
+
+.fa-chevron-down {
+  color: #505f79;
+  cursor: pointer;
+  font-size: 1.65rem;
+  font-weight: bold;
+  transform: rotate(180deg);
+  transition: all 1s;
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
+
+#navbar {
   margin-top: 13px;
 }
 
@@ -350,7 +367,6 @@ button:active {
   background-color: blue;
 }
 
-
 .part {
   background-color: white;
   margin-top: 150px;
@@ -415,7 +431,7 @@ button:active {
 
 .arrow-image {
   margin-top: 20px;
-  margin-right: 40px;
+  margin-right: 3rem;
 }
 
 .stacked {
@@ -586,7 +602,7 @@ textarea {
   top: 0;
   position: fixed;
   backdrop-filter: blur(10px);
-  display: flex;
+  display: block;
   justify-content: center;
 }
 
@@ -594,12 +610,13 @@ textarea {
 
 .mainPopup {
   background-color: #fff;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
-  height: 750px;
-  margin-top: 20px;
+  height: 40rem;
+  margin-top: 5rem;
   margin-bottom: 20px;
   border-radius: 10px;
+  overflow: auto;
 }
 
 ul {
@@ -847,10 +864,12 @@ ul {
     margin-bottom: 0;
     padding-bottom: 0;
     width: 50%;
+    transform: scale(1);
+    transition: transform 0.3s ease-out;
   }
 
   .item1:hover {
-    transform: scale(1.01);
+    transform: scale(0.85);
   }
 
   .item8 {
@@ -990,7 +1009,7 @@ ul {
     height: 300px;
   }
 
-  .icon-text{
+  .icon-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1029,12 +1048,27 @@ ul {
     max-width: 10rem;
   }
 
+  .hidden {
+    display: none;
+  }
+
+  .fa-chevron-down {
+    color: #505f79;
+    cursor: pointer;
+    font-size: 1.65rem;
+    font-weight: bold;
+    transform: rotate(180deg);
+    transition: all 1s;
+  }
+
+  .rotate {
+    transform: rotate(360deg);
+  }
 }
 
 /* styling for mobile */
 
 @media only screen and (max-width: 600px) {
-   
   .stack_list {
     display: flex;
     flex-direction: column;
@@ -1068,10 +1102,54 @@ ul {
 
   .soft-item {
     background-color: gainsboro;
-    padding: .5rem;
+    padding: 0.5rem;
     font-family: "Poppins", sans-serif;
     color: #344563;
     border-radius: 0.5rem;
   }
-}
 
+  .hidden {
+    display: none;
+  }
+
+  .fa-chevron-down {
+    color: #505f79;
+    cursor: pointer;
+    font-size: 1.65rem;
+    font-weight: bold;
+    transform: rotate(180deg);
+    transition: all 1s;
+    margin-right: 2rem;
+  }
+
+  .rotate {
+    transform: rotate(360deg);
+  }
+
+  .mainPopup {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    height: 40rem;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+
+  #name {
+    width: 70%;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: scale(2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+}

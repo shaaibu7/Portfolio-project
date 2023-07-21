@@ -25,7 +25,8 @@ const windowPopup = [
     id: 'cardOne',
     title: 'Crypto app',
     fields: ['Crypto', 'Coins', '2023'],
-    description: 'An application that keeps track of live market statistics of cryptocurrency.',
+    description:
+      'An application that keeps track of live market statistics of cryptocurrency.',
     stack: ['React', 'Redux', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -48,7 +49,8 @@ const windowPopup = [
     id: 'cardTwo',
     title: 'Github Finder',
     fields: ['Finder', 'Github', '2023'],
-    description: 'A web applications that consumes the GitHub API and returns users profile by searching their usernames.',
+    description:
+      'A web applications that consumes the GitHub API and returns users profile by searching their usernames.',
     stack: ['html', 'Bootstrap', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -72,7 +74,8 @@ const windowPopup = [
     id: 'cardThree',
     title: 'Bookstore',
     fields: ['Bookstore', 'Track', '2023'],
-    description: 'This applications allows user to keep track of books he has read with functionality to add and remove books. built with react and redux.',
+    description:
+      'This applications allows user to keep track of books he has read with functionality to add and remove books. built with react and redux.',
     stack: ['React', 'Redux', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -95,7 +98,8 @@ const windowPopup = [
     id: 'cardFour',
     title: 'ToDo List app',
     fields: ['ToDo', 'Schedule', '2023'],
-    description: 'A To-Do-List app designed to schedule tasks and manage time. Users can add a task, delete task, edit task and update tasks.',
+    description:
+      'A To-Do-List app designed to schedule tasks and manage time. Users can add a task, delete task, edit task and update tasks.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -119,11 +123,12 @@ const windowPopup = [
     id: 'cardFive',
     title: 'Budget app',
     fields: ['Plan', 'Spend', '2023'],
-    description: 'A Budget app that helps users monitor their spending and transactions by carefully keeping organized records.',
+    description:
+      'A Budget app that helps users monitor their spending and transactions by carefully keeping organized records.',
     stack: ['html', 'css', 'Ruby on rails'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
-      contentImage: 'images/budgetapp.png',
+      contentImage: 'images/budgetnew.png',
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
@@ -134,6 +139,29 @@ const windowPopup = [
     navigation: {
       live: 'https://budget-c1ft.onrender.com/',
       source: 'https://github.com/shaaibu7/Budget-app',
+    },
+    button: 'See Project',
+  },
+  {
+    id: 'cardSix',
+    title: 'VR WORLD',
+    fields: ['Experience', 'Reality', '2023'],
+    description:
+      'A web application where users can make reservation for different virtual reality studios. The platform where users are connected with a vr studio for an experience.',
+    stack: ['React', 'Redux', 'Ruby on rails'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/vr.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://vr-world23.netlify.app/home',
+      source: 'https://github.com/shaaibu7/vr-world-front-end',
     },
     button: 'See Project',
     styling: 'reverse',

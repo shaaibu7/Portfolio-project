@@ -166,7 +166,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 60px;
   color: #091e42;
   padding-top: 190px;
@@ -602,6 +602,7 @@ textarea {
   top: 0;
   position: fixed;
   backdrop-filter: blur(10px);
+  z-index: 20;
   display: block;
   justify-content: center;
 }
@@ -909,7 +910,7 @@ ul {
 
   .abouttwo {
     padding-left: 500px;
-    margin-top: -420px;
+    margin-top: -32rem;
     margin-right: 0;
   }
 
@@ -922,7 +923,7 @@ ul {
   }
 
   .last {
-    width: 447px;
+    width: 20rem;
   }
 
   .stacked {

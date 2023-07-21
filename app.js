@@ -26,7 +26,7 @@ const windowPopup = [
     title: 'Crypto app',
     fields: ['Crypto', 'Coins', '2023'],
     description:
-      'An application that keeps track of live market statistics of cryptocurrency.',
+      'An application that empowers you with real-time cryptocurrency data to make informed decisions and thrive in the ever-changing market landscape."',
     stack: ['React', 'Redux', 'javascript'],
     // stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {

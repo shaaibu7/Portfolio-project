@@ -10,5 +10,3 @@ array.forEach((item) => {
     e.preventDefault();
   });
 });
-
-console.log(arrows);

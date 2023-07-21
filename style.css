@@ -16,7 +16,9 @@ body {
   background-image: url("images/Header-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
+
   /* background-position-y: calc(40px); */
+
   /* background-position-x: -10px; */
 
   /* margin-left: 24px; */
@@ -611,7 +613,7 @@ textarea {
 
 .mainPopup {
   background-color: #fff;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   height: 40rem;
   margin-top: 5rem;
@@ -740,6 +742,11 @@ ul {
     box-sizing: 0;
   }
 
+  .img-resize {
+    width: 40%;
+    height: 40%;
+  }
+
   #wrapper {
     width: 100%;
     background-size: contain;
@@ -845,9 +852,16 @@ ul {
     margin-bottom: 255px;
   }
 
-  #about {
-    width: 90%;
+
+  .btn {
+    margin-bottom: 8rem;
   }
+
+  #about {
+    width: 70%;
+  }
+ 
+
 
   .content {
     display: flex;
@@ -910,7 +924,7 @@ ul {
 
   .abouttwo {
     padding-left: 500px;
-    margin-top: -32rem;
+    margin-top: -47rem;
     margin-right: 0;
   }
 
@@ -1041,7 +1055,8 @@ ul {
   }
 
   .hidden {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
   }
 
   .fa-chevron-down {
@@ -1129,6 +1144,11 @@ ul {
     overflow: auto;
   }
 
+  .img-resize {
+     width: 90%;
+     height: 60%;
+  }
+
   #name {
     width: 70%;
     animation-duration: 3s;
@@ -1155,4 +1175,10 @@ ul {
     padding-left: 1rem;
   }
 
+
+  #about {
+    width: 80%;
+  }
+
+   
 }

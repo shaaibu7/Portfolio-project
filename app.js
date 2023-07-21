@@ -28,7 +28,7 @@ const windowPopup = [
     description:
       'An application that keeps track of live market statistics of cryptocurrency.',
     stack: ['React', 'Redux', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
+    // stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
       contentImage: 'images/cryptoapp.png',
       counter: 'images/Counter.png',
@@ -254,7 +254,7 @@ parent.addEventListener('click', (e) => {
       </div>
 
       <div class="cardImage">
-          <img src="${item.images.contentImage}" alt="" class="img-resize" width="94%" height="200px">
+          <img src="${item.images.contentImage}" alt="" class="img-resize">
       </div>
 
       <div class="sectionTwoPopup">
@@ -269,11 +269,6 @@ parent.addEventListener('click', (e) => {
                   <li><button>${item.stack[2]}</button></li>
               </ul>
 
-              <ul class="skillsPopup skillsCancel">
-                  <li><button>${item.stackTwo[0]}</button></li>
-                  <li><button>${item.stackTwo[1]}</button></li>
-                  <li><button>${item.stackTwo[2]}</button></li>
-              </ul>
 
               <a href="${item.navigation.live}" target="_blank"><button class="btnPopup btnPopup1"><span>${item.btn1}</span> <img src="images/see-live.png" alt="" class="redirect"></button></a>
               <a href="${item.navigation.source}" target="_blank"><button class="btnPopup1 btnPops"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button></a>

@@ -1157,6 +1157,7 @@ ul {
     width: 70%;
     animation-duration: 3s;
     animation-name: slidein;
+    margin-top: 0;
   }
 
   @keyframes slidein {
@@ -1172,10 +1173,6 @@ ul {
   header {
     width: 100%;
     margin-left: 0;
-  }
-
-  #name {
-    margin-top: 0;
   }
 
   #container {

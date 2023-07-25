@@ -76,6 +76,11 @@ body {
   height: 15rem;
 }
 
+#main-icon {
+  width: 37rem;
+  height: 26rem;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -303,6 +308,7 @@ li {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  padding-bottom: 1rem;
   line-height: 24px;
   color: #344563;
 }
@@ -1089,6 +1095,11 @@ ul {
     text-align: center;
   }
 
+  #main-icon {
+    width: 90%;
+    height: 13rem;
+  }
+
   .language-text {
     padding-top: 0.7rem;
   }
@@ -1139,7 +1150,7 @@ ul {
 
   .img-resize {
     width: 90%;
-    height: 60%;
+    height: 15rem;
   }
 
   #name {
@@ -1163,9 +1174,16 @@ ul {
     margin-left: 0;
   }
 
+  #name {
+    margin-top: 0;
+  }
+
   #container {
     margin: 0;
     padding-left: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
   }
 
   #about {

@@ -26,7 +26,7 @@ const windowPopup = [
     title: 'Crypto app',
     fields: ['Crypto', 'Coins', '2023'],
     description:
-      'An application that empowers you with real-time cryptocurrency data to make informed decisions and thrive in the ever-changing market landscape."',
+      'An application that empowers you with real-time cryptocurrency data to make informed decisions and thrive in the ever-changing market landscape.',
     stack: ['React', 'Redux', 'javascript'],
     // stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -50,11 +50,11 @@ const windowPopup = [
     title: 'Github Finder',
     fields: ['Finder', 'Github', '2023'],
     description:
-      'A web applications that consumes the GitHub API and returns users profile by searching their usernames.',
+      'A web application that consumes the GitHub API and returns user profiles by searching their usernames.',
     stack: ['html', 'Bootstrap', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
-      contentImage: 'images/github.png',
+      contentImage: 'images/githubupdated.png',
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
@@ -75,7 +75,7 @@ const windowPopup = [
     title: 'Bookstore',
     fields: ['Bookstore', 'Track', '2023'],
     description:
-      'This applications allows user to keep track of books he has read with functionality to add and remove books. built with react and redux.',
+      'This application allows user to keep track of books he has read with functionality to add and remove books. built with react and redux.',
     stack: ['React', 'Redux', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -99,7 +99,7 @@ const windowPopup = [
     title: 'ToDo List app',
     fields: ['ToDo', 'Schedule', '2023'],
     description:
-      'A To-Do-List app designed to schedule tasks and manage time. Users can add a task, delete task, edit task and update tasks.',
+      'A To-Do-List app designed to schedule tasks and manage time. Users can add a task, delete a task, edit a task, and update tasks.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -147,7 +147,7 @@ const windowPopup = [
     title: 'VR WORLD',
     fields: ['Experience', 'Reality', '2023'],
     description:
-      'A web application where users can make reservation for different virtual reality studios. The platform where users are connected with a vr studio for an experience.',
+      'A web application where users can make reservations for different virtual reality studios. The platform where users are connected with a vr studio for an experience.',
     stack: ['React', 'Redux', 'Ruby on rails'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
@@ -174,7 +174,7 @@ function Reverse() {
 
 windowPopup.forEach((item) => {
   mainContainer.innerHTML += `<div class="content ${item.styling}">
-    <img class="item item1" src="${item.images.contentImage}" alt="first project image">
+    <img class="item item1" id="main-icon" src="${item.images.contentImage}" alt="first project image">
     <div class="card">
         <h2 class="item item2">${item.title}</h2>
         <div>

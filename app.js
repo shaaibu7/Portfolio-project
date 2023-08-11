@@ -18,18 +18,19 @@ navLinks.forEach((link) => {
   });
 });
 
-// serving main conetent dynamically
+// serving main content dynamically
 
 const windowPopup = [
   {
     id: 'cardOne',
-    title: 'Tonic',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
+    title: 'Crypto app',
+    fields: ['Crypto', 'Coins', '2023'],
+    description:
+      'An application that empowers you with real-time cryptocurrency data to make informed decisions and thrive in the ever-changing market landscape.',
+    stack: ['React', 'Redux', 'javascript'],
+    // stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
-      contentImage: 'images/Snapshoot-Portfolio.png',
+      contentImage: 'images/cryptoapp.png',
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
@@ -38,21 +39,22 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
+      live: 'https://641d7eb37e27cf0008c5a34c--cryptocurrency-livestat.netlify.app/',
+      source: 'https://github.com/shaaibu7/cryptocurrency-app',
     },
     button: 'See Project',
   },
 
   {
     id: 'cardTwo',
-    title: 'Multi-Post Stories',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
+    title: 'Github Finder',
+    fields: ['Finder', 'Github', '2023'],
+    description:
+      'A web application that consumes the GitHub API and returns user profiles by searching their usernames.',
+    stack: ['html', 'Bootstrap', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
-      contentImage: 'images/Snapshoot-Portfolio1.png',
+      contentImage: 'images/githubupdated.png',
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
@@ -61,45 +63,23 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
+      live: 'https://shaaibu7.github.io/GitHub-Finder-Web-App/src/',
+      source: 'https://github.com/shaaibu7/GitHub-Finder-Web-App',
     },
     button: 'See Project',
     styling: 'reverse',
-  },
-
-  {
-    id: 'cardThree',
-    title: 'Multi-Post Stories',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
-    stack: ['html', 'css', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
-    images: {
-      contentImage: 'images/Snapshoot-Portfolio2.png',
-      counter: 'images/Counter.png',
-      liveImage: 'images/see-live.png',
-      sourceImage: 'images/see-source.png',
-      cancelImage: 'images/xicon.png',
-    },
-    btn1: 'See live',
-    btn2: 'See source',
-    navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
-    },
-    button: 'See Project',
   },
 
   {
     id: 'cardFour',
-    title: 'Multi-Post Stories',
-    fields: ['Canopy', 'Back End Dev', '2015'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet leo id risus hendrerit auctor. Praesent at nisi venenatis, fringilla lacus ut, interdum urna.',
+    title: 'ToDo List app',
+    fields: ['ToDo', 'Schedule', '2023'],
+    description:
+      'A To-Do-List app designed to schedule tasks and manage time. Users can add a task, delete a task, edit a task, and update tasks.',
     stack: ['html', 'css', 'javascript'],
     stackTwo: ['github', 'ruby', 'bootstrap'],
     images: {
-      contentImage: 'images/Snapshoot-Portfolio3.png',
+      contentImage: 'images/todolist.png',
       counter: 'images/Counter.png',
       liveImage: 'images/see-live.png',
       sourceImage: 'images/see-source.png',
@@ -108,11 +88,58 @@ const windowPopup = [
     btn1: 'See live',
     btn2: 'See source',
     navigation: {
-      live: 'https://github.com/shaaibu7/Portfolio-project',
-      source: 'https://github.com/shaaibu7/Portfolio-project',
+      live: 'https://timetrack-app.netlify.app/',
+      source: 'https://github.com/shaaibu7/To-Do-List',
+    },
+    button: 'See Project',
+  },
+
+  {
+    id: 'cardFive',
+    title: 'Budget app',
+    fields: ['Plan', 'Spend', '2023'],
+    description:
+      'A Budget app that helps users monitor their spending and transactions by carefully keeping organized records.',
+    stack: ['html', 'css', 'Ruby on rails'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/budgetnew.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://budget-c1ft.onrender.com/',
+      source: 'https://github.com/shaaibu7/Budget-app',
     },
     button: 'See Project',
     styling: 'reverse',
+  },
+  {
+    id: 'cardSix',
+    title: 'VR WORLD',
+    fields: ['Experience', 'Reality', '2023'],
+    description:
+      'A web application where users can make reservations for different virtual reality studios. The platform where users are connected with a vr studio for an experience.',
+    stack: ['React', 'Redux', 'Ruby on rails'],
+    stackTwo: ['github', 'ruby', 'bootstrap'],
+    images: {
+      contentImage: 'images/vr.png',
+      counter: 'images/Counter.png',
+      liveImage: 'images/see-live.png',
+      sourceImage: 'images/see-source.png',
+      cancelImage: 'images/xicon.png',
+    },
+    btn1: 'See live',
+    btn2: 'See source',
+    navigation: {
+      live: 'https://vr-world23.netlify.app/home',
+      source: 'https://github.com/shaaibu7/vr-world-front-end',
+    },
+    button: 'See Project',
   },
 ];
 
@@ -122,7 +149,7 @@ function Reverse() {
 
 windowPopup.forEach((item) => {
   mainContainer.innerHTML += `<div class="content ${item.styling}">
-    <img class="item item1" src="${item.images.contentImage}" alt="first project image">
+    <img class="item item1" id="main-icon" src="${item.images.contentImage}" alt="first project image">
     <div class="card">
         <h2 class="item item2">${item.title}</h2>
         <div>
@@ -202,7 +229,7 @@ parent.addEventListener('click', (e) => {
       </div>
 
       <div class="cardImage">
-          <img src="${item.images.contentImage}" alt="" width="94%" height="300px">
+          <img src="${item.images.contentImage}" alt="" class="img-resize">
       </div>
 
       <div class="sectionTwoPopup">
@@ -217,14 +244,9 @@ parent.addEventListener('click', (e) => {
                   <li><button>${item.stack[2]}</button></li>
               </ul>
 
-              <ul class="skillsPopup skillsCancel">
-                  <li><button>${item.stackTwo[0]}</button></li>
-                  <li><button>${item.stackTwo[1]}</button></li>
-                  <li><button>${item.stackTwo[2]}</button></li>
-              </ul>
 
               <a href="${item.navigation.live}" target="_blank"><button class="btnPopup btnPopup1"><span>${item.btn1}</span> <img src="images/see-live.png" alt="" class="redirect"></button></a>
-              <a href="${item.navigation.live}" target="_blank"><button class="btnPopup1 btnPops"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button></a>
+              <a href="${item.navigation.source}" target="_blank"><button class="btnPopup1 btnPops"><span>${item.btn2}</span> <img src="images/see-source.png" alt=""></button></a>
           </div>
       </div>
 

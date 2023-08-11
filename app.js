@@ -71,30 +71,6 @@ const windowPopup = [
   },
 
   {
-    id: 'cardThree',
-    title: 'Bookstore',
-    fields: ['Bookstore', 'Track', '2023'],
-    description:
-      'This application allows user to keep track of books he has read with functionality to add and remove books. built with react and redux.',
-    stack: ['React', 'Redux', 'javascript'],
-    stackTwo: ['github', 'ruby', 'bootstrap'],
-    images: {
-      contentImage: 'images/bookstore.png',
-      counter: 'images/Counter.png',
-      liveImage: 'images/see-live.png',
-      sourceImage: 'images/see-source.png',
-      cancelImage: 'images/xicon.png',
-    },
-    btn1: 'See live',
-    btn2: 'See source',
-    navigation: {
-      live: 'https://bookstore-tracker.netlify.app/',
-      source: 'https://github.com/shaaibu7/Bookstore-with-react',
-    },
-    button: 'See Project',
-  },
-
-  {
     id: 'cardFour',
     title: 'ToDo List app',
     fields: ['ToDo', 'Schedule', '2023'],
@@ -116,7 +92,6 @@ const windowPopup = [
       source: 'https://github.com/shaaibu7/To-Do-List',
     },
     button: 'See Project',
-    styling: 'reverse',
   },
 
   {
@@ -141,6 +116,7 @@ const windowPopup = [
       source: 'https://github.com/shaaibu7/Budget-app',
     },
     button: 'See Project',
+    styling: 'reverse',
   },
   {
     id: 'cardSix',
@@ -164,7 +140,6 @@ const windowPopup = [
       source: 'https://github.com/shaaibu7/vr-world-front-end',
     },
     button: 'See Project',
-    styling: 'reverse',
   },
 ];
 
